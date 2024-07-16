@@ -2,17 +2,61 @@
   "name": "react-native-pantas-data",
   "version": "0.0.1",
   "description": "Pantas means Fast in Malay language. The library is to make data faster processing with native bridge.",
-  "main": "src/index",
+  "main": "./lib/commonjs/index.js",
   "author": "Lai Yong Wei <yweilai@gmail.com> (https://github.com/yongweilai)",
   "license": "MIT",
   "homepage": "#readme",
   "devDependencies": {
     "react": "18.2.0",
-    "react-native": "0.74.3"
+    "react-native": "0.74.3",
+    "react-native-builder-bob": "^0.26.0"
   },
   "create-react-native-library": {
     "type": "module-legacy",
     "languages": "kotlin-swift",
     "version": "0.38.2"
-  }
+  },
+  "source": "./src/index.tsx",
+  "module": "./lib/module/index.js",
+  "types": "./lib/typescript/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/typescript/src/index.d.ts",
+      "import": "./lib/module/index.js",
+      "require": "./lib/commonjs/index.js"
+    }
+  },
+  "scripts": {
+    "prepare": "bob build"
+  },
+  "files": [
+    "src",
+    "lib",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      [
+        "commonjs",
+        {
+          "esm": true
+        }
+      ],
+      [
+        "module",
+        {
+          "esm": true
+        }
+      ],
+      "typescript"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ]
 }
