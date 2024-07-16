@@ -1,0 +1,1 @@
+../../../../../node_modules/react-native-pantas-data/ios/PantasData-Bridging-Header.h

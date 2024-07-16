@@ -1,0 +1,16 @@
+current directory: /Users/yweilai/Documents/modules/pantas-data/sampleApp/vendor/bundle/ruby/2.7.0/gems/nkf-0.2.0/ext/nkf
+/Users/yweilai/.rvm/rubies/ruby-2.7.6/bin/ruby -I /Users/yweilai/.rvm/rubies/ruby-2.7.6/lib/ruby/2.7.0 -r ./siteconf20240715-66143-vfmmjg.rb extconf.rb
+creating Makefile
+
+current directory: /Users/yweilai/Documents/modules/pantas-data/sampleApp/vendor/bundle/ruby/2.7.0/gems/nkf-0.2.0/ext/nkf
+make "DESTDIR=" clean
+
+current directory: /Users/yweilai/Documents/modules/pantas-data/sampleApp/vendor/bundle/ruby/2.7.0/gems/nkf-0.2.0/ext/nkf
+make "DESTDIR="
+compiling nkf.c
+linking shared-object nkf.bundle
+ld: warning: -multiply_defined is obsolete
+
+current directory: /Users/yweilai/Documents/modules/pantas-data/sampleApp/vendor/bundle/ruby/2.7.0/gems/nkf-0.2.0/ext/nkf
+make "DESTDIR=" install
+/opt/homebrew/opt/coreutils/bin/ginstall -c -m 0755 nkf.bundle ./.gem.20240715-66143-14bh2yh

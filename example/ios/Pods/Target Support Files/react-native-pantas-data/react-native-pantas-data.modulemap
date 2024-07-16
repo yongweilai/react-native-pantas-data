@@ -1,0 +1,6 @@
+module react_native_pantas_data {
+  umbrella header "react-native-pantas-data-umbrella.h"
+
+  export *
+  module * { export * }
+}
