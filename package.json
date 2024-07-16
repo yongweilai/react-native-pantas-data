@@ -1,0 +1,18 @@
+{
+  "name": "react-native-pantas-data",
+  "version": "0.0.1",
+  "description": "Pantas means Fast in Malay language. The library is to make data faster processing with native bridge.",
+  "main": "src/index",
+  "author": "Lai Yong Wei <yweilai@gmail.com> (https://github.com/yongweilai)",
+  "license": "MIT",
+  "homepage": "#readme",
+  "devDependencies": {
+    "react": "18.2.0",
+    "react-native": "0.74.3"
+  },
+  "create-react-native-library": {
+    "type": "module-legacy",
+    "languages": "kotlin-swift",
+    "version": "0.38.2"
+  }
+}
